@@ -1,0 +1,177 @@
+{
+  "Bandit": [
+    {
+      "name": "Scimitar",
+      "type": "weapon",
+      "system": {
+        "weaponType": "martialM",
+        "ability": "dex",
+        "damage": { "parts": [["1d6 + @mod","slashing"]] },
+        "properties": { "fin": true, "light": true },
+        "range": { "value": null, "long": null, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Curved sword favored by bandits." }
+      }
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "weapon",
+      "system": {
+        "weaponType": "martialR",
+        "ability": "dex",
+        "damage": { "parts": [["1d8 + @mod","piercing"]] },
+        "properties": { "loading": true, "two": true },
+        "range": { "value": 80, "long": 320, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Simple ranged weapon." }
+      }
+    },
+    {
+      "name": "Leather Armor",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 11, "dex": null },
+        "description": { "value": "Worn leather vest and bracers." }
+      }
+    }
+  ],
+  "Commoner": [
+    {
+      "name": "Club",
+      "type": "weapon",
+      "system": {
+        "weaponType": "simpleM",
+        "ability": "str",
+        "damage": { "parts": [["1d4 + @mod","bludgeoning"]] },
+        "properties": { "light": true },
+        "range": { "value": null, "long": null, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "A worn wooden club." }
+      }
+    },
+    {
+      "name": "Padded Clothes",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 11, "dex": null },
+        "description": { "value": "Quilted layers offering minimal protection." }
+      }
+    }
+  ],
+  "Guard": [
+    {
+      "name": "Spear",
+      "type": "weapon",
+      "system": {
+        "weaponType": "simpleM",
+        "ability": "str",
+        "damage": { "parts": [["1d6 + @mod","piercing"]] },
+        "properties": { "thrown": true, "versatile": true },
+        "range": { "value": 20, "long": 60, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Regulation guard spear." }
+      }
+    },
+    {
+      "name": "Shield",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 2 },
+        "description": { "value": "Guard-issue shield with city crest." }
+      }
+    },
+    {
+      "name": "Chain Shirt",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 13, "dex": 2 },
+        "description": { "value": "Riveted links over a gambeson." }
+      }
+    }
+  ],
+  "Scout": [
+    {
+      "name": "Shortbow",
+      "type": "weapon",
+      "system": {
+        "weaponType": "simpleR",
+        "ability": "dex",
+        "damage": { "parts": [["1d6 + @mod","piercing"]] },
+        "properties": { "two": true },
+        "range": { "value": 80, "long": 320, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Light bow for fast movement." }
+      }
+    },
+    {
+      "name": "Scimitar",
+      "type": "weapon",
+      "system": {
+        "weaponType": "martialM",
+        "ability": "dex",
+        "damage": { "parts": [["1d6 + @mod","slashing"]] },
+        "properties": { "fin": true, "light": true },
+        "range": { "value": null, "long": null, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Backup blade for close combat." }
+      }
+    },
+    {
+      "name": "Studded Leather",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 12, "dex": null },
+        "description": { "value": "Quiet, flexible armor favored by scouts." }
+      }
+    }
+  ],
+  "Thug": [
+    {
+      "name": "Mace",
+      "type": "weapon",
+      "system": {
+        "weaponType": "simpleM",
+        "ability": "str",
+        "damage": { "parts": [["1d6 + @mod","bludgeoning"]] },
+        "range": { "value": null, "long": null, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "A heavy, blunt weapon for intimidation." }
+      }
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "weapon",
+      "system": {
+        "weaponType": "martialR",
+        "ability": "dex",
+        "damage": { "parts": [["1d8 + @mod","piercing"]] },
+        "properties": { "loading": true, "two": true },
+        "range": { "value": 80, "long": 320, "units": "ft" },
+        "proficient": true,
+        "equipped": true,
+        "description": { "value": "Cheap and deadly." }
+      }
+    },
+    {
+      "name": "Leather Armor",
+      "type": "equipment",
+      "system": {
+        "equipped": true,
+        "armor": { "value": 11, "dex": null },
+        "description": { "value": "Scrap leather stitched together." }
+      }
+    }
+  ]
+}

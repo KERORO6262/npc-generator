@@ -1,0 +1,24 @@
+{
+  "Bandit": [
+    {
+      "name": "Minor Illusion",
+      "type": "spell",
+      "system": { "level": 0, "school": "ill" }
+    }
+  ],
+  "Commoner": [],
+  "Guard": [],
+  "Scout": [
+    {
+      "name": "Hunter's Mark",
+      "type": "spell",
+      "system": { "level": 1, "school": "div" }
+    },
+    {
+      "name": "Druidcraft",
+      "type": "spell",
+      "system": { "level": 0, "school": "trs" }
+    }
+  ],
+  "Thug": []
+}

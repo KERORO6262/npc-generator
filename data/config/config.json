@@ -1,0 +1,153 @@
+{
+  "paths": {
+    "firstNames": "modules/npc-generator/data/first_names.txt",
+    "lastNames": "modules/npc-generator/data/last_names.txt",
+    "backgrounds": "modules/npc-generator/data/backgrounds.txt",
+    "personalities": "modules/npc-generator/data/personalities.txt",
+    "quirks": "modules/npc-generator/data/quirks.txt",
+    "genders": "modules/npc-generator/data/genders.txt",
+    "appearance": {
+      "builds": "modules/npc-generator/data/appearance/builds.txt",
+      "hairColors": "modules/npc-generator/data/appearance/hair_colors.txt",
+      "eyeColors": "modules/npc-generator/data/appearance/eye_colors.txt",
+      "marks": "modules/npc-generator/data/appearance/marks.txt",
+      "raceFlavorDir": "modules/npc-generator/data/appearance/race/"
+    },
+    "ages": {
+      "labels": "modules/npc-generator/data/ages/labels.txt"
+    },
+    "gear": "modules/npc-generator/data/npc_gear.json",
+    "spells": "modules/npc-generator/data/npc_spells.json"
+  },
+
+  "races": [
+    {
+      "id": "Human",
+      "speed": 30,
+      "abilityBonuses": { "str": 1, "dex": 1, "con": 1, "int": 1, "wis": 1, "cha": 1 },
+      "languages": ["common"],
+      "raceFlavorFile": "Human.txt",
+      "age": {
+        "min": 15,
+        "adulthood": 18,
+        "max": 90,
+        "buckets": [
+          { "id": "young", "range": [18, 25], "weight": 0.30 },
+          { "id": "adult", "range": [26, 55], "weight": 0.50 },
+          { "id": "elder", "range": [56, 80], "weight": 0.18 },
+          { "id": "ancient", "range": [81, 90], "weight": 0.02 }
+        ]
+      }
+    },
+    {
+      "id": "Elf",
+      "speed": 30,
+      "abilityBonuses": { "dex": 2 },
+      "languages": ["common", "elvish"],
+      "raceFlavorFile": "Elf.txt",
+      "age": {
+        "min": 20,
+        "adulthood": 100,
+        "max": 750,
+        "buckets": [
+          { "id": "young", "range": [100, 180], "weight": 0.25 },
+          { "id": "adult", "range": [181, 500], "weight": 0.55 },
+          { "id": "elder", "range": [501, 700], "weight": 0.18 },
+          { "id": "ancient", "range": [701, 750], "weight": 0.02 }
+        ]
+      }
+    },
+    {
+      "id": "Dwarf",
+      "speed": 25,
+      "abilityBonuses": { "con": 2 },
+      "languages": ["common", "dwarvish"],
+      "raceFlavorFile": "Dwarf.txt",
+      "age": {
+        "min": 20,
+        "adulthood": 40,
+        "max": 350,
+        "buckets": [
+          { "id": "young", "range": [40, 70], "weight": 0.28 },
+          { "id": "adult", "range": [71, 200], "weight": 0.52 },
+          { "id": "elder", "range": [201, 300], "weight": 0.18 },
+          { "id": "ancient", "range": [301, 350], "weight": 0.02 }
+        ]
+      }
+    },
+    {
+      "id": "Halfling",
+      "speed": 25,
+      "abilityBonuses": { "dex": 2 },
+      "languages": ["common", "halfling"],
+      "raceFlavorFile": "Halfling.txt",
+      "age": {
+        "min": 14,
+        "adulthood": 20,
+        "max": 150,
+        "buckets": [
+          { "id": "young", "range": [20, 35], "weight": 0.30 },
+          { "id": "adult", "range": [36, 90], "weight": 0.52 },
+          { "id": "elder", "range": [91, 130], "weight": 0.16 },
+          { "id": "ancient", "range": [131, 150], "weight": 0.02 }
+        ]
+      }
+    },
+    {
+      "id": "Tiefling",
+      "speed": 30,
+      "abilityBonuses": { "cha": 2 },
+      "languages": ["common", "infernal"],
+      "raceFlavorFile": "Tiefling.txt",
+      "age": {
+        "min": 15,
+        "adulthood": 18,
+        "max": 100,
+        "buckets": [
+          { "id": "young", "range": [18, 25], "weight": 0.32 },
+          { "id": "adult", "range": [26, 60], "weight": 0.50 },
+          { "id": "elder", "range": [61, 90], "weight": 0.16 },
+          { "id": "ancient", "range": [91, 100], "weight": 0.02 }
+        ]
+      }
+    }
+  ],
+
+  "types": [
+    {
+      "id": "Commoner",
+      "cr": 0,
+      "xp": 0,
+      "skills": { "ani": { "value": 1 }, "per": { "value": 1 } },
+      "extraLanguages": []
+    },
+    {
+      "id": "Bandit",
+      "cr": 0.125,
+      "xp": 25,
+      "skills": { "ath": { "value": 1 }, "ste": { "value": 1 }, "dec": { "value": 1 } },
+      "extraLanguages": ["thievescant"]
+    },
+    {
+      "id": "Guard",
+      "cr": 0.125,
+      "xp": 25,
+      "skills": { "ath": { "value": 1 }, "ins": { "value": 1 }, "prc": { "value": 1 } },
+      "extraLanguages": []
+    },
+    {
+      "id": "Scout",
+      "cr": 0.5,
+      "xp": 100,
+      "skills": { "nat": { "value": 1 }, "prc": { "value": 1 }, "ste": { "value": 1 }, "sur": { "value": 1 } },
+      "extraLanguages": []
+    },
+    {
+      "id": "Thug",
+      "cr": 0.5,
+      "xp": 100,
+      "skills": { "ath": { "value": 1 }, "itm": { "value": 1 } },
+      "extraLanguages": ["thievescant"]
+    }
+  ]
+}

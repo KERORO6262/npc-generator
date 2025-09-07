@@ -1,0 +1,52 @@
+{
+  "id": "npc-generator",
+  "title": "NPC Generator (dnd5e)",
+  "description": "Slash /npc to instantly generate flavorful NPCs for the dnd5e system. All data is fully externalized (names, backgrounds, personalities, quirks, genders, ages, appearance, race flavor, gear & spells) and configurable via TXT/JSON.",
+  "type": "module",
+  "version": "1.1.0",
+  "authors": [
+    {
+      "name": "KERORO6262",
+      "email": "slinceblue@email.com",
+      "url": "https://www.linkedin.com/in/bbmps-badr/"
+    }
+  ],
+  "url": "https://github.com/KERORO6262/npc-generator",
+  "readme": "modules/npc-generator/README.md",
+  "license": "MIT",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.343"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "",
+        "compatibility": {
+          "minimum": "3",
+          "verified": "3"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "npc-data-loader.js",
+    "npc-generator.js"
+  ],
+  "scripts": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "flags": {
+    "npc-generator": {
+      "configPath": "modules/npc-generator/data/config/config.json",
+      "dataPaths": {
+        "base": "modules/npc-generator/data/",
+        "appearance": "modules/npc-generator/data/appearance/",
+        "ages": "modules/npc-generator/data/ages/"
+      }
+    }
+  }
+}
