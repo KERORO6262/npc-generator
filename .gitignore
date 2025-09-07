@@ -1,0 +1,19 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (若有用 npm/yarn)
+node_modules/
+
+# 編輯器暫存檔
+*.swp
+*.swo
+*.tmp
+
+# 壓縮包
+*.zip
+*.7z
+*.rar
