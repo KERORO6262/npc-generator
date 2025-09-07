@@ -1,18 +1,13 @@
 {
   "id": "npc-generator",
   "title": "NPC Generator (dnd5e)",
-  "description": "Slash /npc to instantly generate flavorful NPCs for the dnd5e system. All data is fully externalized (names, backgrounds, personalities, quirks, genders, ages, appearance, race flavor, gear & spells) and configurable via TXT/JSON.",
-  "type": "module",
+  "description": "Generate random NPCs with names, backgrounds, personalities, quirks, appearance, age, gender, and gear for dnd5e.",
   "version": "1.1.0",
   "authors": [
-    {
-      "name": "KERORO6262",
-      "email": "slinceblue@email.com",
-      "url": "https://www.linkedin.com/in/bbmps-badr/"
-    }
+    { "name": "KERORO6262" }
   ],
   "url": "https://github.com/KERORO6262/npc-generator",
-  "readme": "modules/npc-generator/README.md",
+  "readme": "https://github.com/KERORO6262/npc-generator#readme",
   "license": "MIT",
   "compatibility": {
     "minimum": "12",
@@ -23,11 +18,7 @@
       {
         "id": "dnd5e",
         "type": "system",
-        "manifest": "",
-        "compatibility": {
-          "minimum": "3",
-          "verified": "3"
-        }
+        "compatibility": { "minimum": "3", "verified": "3" }
       }
     ]
   },
@@ -48,5 +39,7 @@
         "ages": "modules/npc-generator/data/ages/"
       }
     }
-  }
+  },
+  "manifest": "https://github.com/KERORO6262/npc-generator/releases/download/v1.1.0/module.json",
+  "download": "https://github.com/KERORO6262/npc-generator/releases/download/v1.1.0/npc-generator-v1.1.0.zip"
 }
