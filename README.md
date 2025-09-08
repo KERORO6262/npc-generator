@@ -1,10 +1,10 @@
 # NPC Generator (FoundryVTT v12.343 + dnd5e)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator/releases)
-[![Downloads](https://img.shields.io/github/downloads/KERORO6262/npc-generator/total.svg)](https://github.com/KERORO6262/npc-generator/releases)
-[![Issues](https://img.shields.io/github/issues/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator/issues)
-[![Stars](https://img.shields.io/github/stars/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator/stargazers)
+[![GitHub release](https://img.shields.io/github/v/release/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator-dnd5e-fvtt/releases)
+[![Downloads](https://img.shields.io/github/downloads/KERORO6262/npc-generator/total.svg)](https://github.com/KERORO6262/npc-generator-dnd5e-fvtt/releases)
+[![Issues](https://img.shields.io/github/issues/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator-dnd5e-fvtt/issues)
+[![Stars](https://img.shields.io/github/stars/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator-dnd5e-fvtt/stargazers)
 
 🌐 [English](README.md) | [中文](README.zh.md)
 
