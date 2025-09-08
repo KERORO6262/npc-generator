@@ -69,7 +69,7 @@ npc-generator/
 
 ### GitHub Raw 安裝
 複製以下連結到 Foundry 的「安裝模組」→「透過 Manifest 安裝」：
-https://raw.githubusercontent.com/KERORO6262/npc-generator/main/module.json
+https://raw.githubusercontent.com/KERORO6262/npc-generator-dnd5e-fvtt/main/module.json
 
 ---
 
