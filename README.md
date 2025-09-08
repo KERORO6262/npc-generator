@@ -10,7 +10,7 @@
 
 A FoundryVTT module that quickly generates D&D 5e NPCs with names, backgrounds, personalities, quirks, appearances, ages, and equipment.  
 All data sources are externalized for easy editing and expansion.
-
+Currently, detailed equipment, characteristics, and spells are placeholders.
 ---
 
 ## ✨ Features
