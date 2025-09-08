@@ -71,7 +71,7 @@ npc-generator/
 
 ### GitHub Raw Installation
 Copy the following link into Foundry’s “Install Module” → “Install via Manifest”:  
-https://raw.githubusercontent.com/KERORO6262/npc-generator/main/module.json  
+https://raw.githubusercontent.com/KERORO6262/npc-generator-dnd5e-fvtt/main/module.json  
 
 ---
 
