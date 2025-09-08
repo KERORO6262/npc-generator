@@ -26,7 +26,7 @@
 ---
 
 ## 📂 專案結構
-
+```
 npc-generator/
 ├─ module.json
 ├─ npc-data-loader.js
@@ -60,7 +60,7 @@ npc-generator/
 │
 ├─ npc_gear.json
 └─ npc_spells.json
-
+```
 ---
 
 ## ⚙️ 安裝
