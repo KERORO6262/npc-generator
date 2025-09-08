@@ -6,23 +6,25 @@
 [![Issues](https://img.shields.io/github/issues/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator/issues)
 [![Stars](https://img.shields.io/github/stars/KERORO6262/npc-generator)](https://github.com/KERORO6262/npc-generator/stargazers)
 
-一個 FoundryVTT 模組，可快速生成帶有名字、背景、個性、怪癖、外觀、年齡與裝備的 D&D 5e NPC。  
-所有資料來源皆外部化，方便編輯與擴充。
+🌐 [English](README.md) | [中文](README.zh.md)
+
+A FoundryVTT module that quickly generates D&D 5e NPCs with names, backgrounds, personalities, quirks, appearances, ages, and equipment.  
+All data sources are externalized for easy editing and expansion.
 
 ---
 
-## ✨ 功能特色
-- **一鍵生成 NPC**：在聊天框輸入 `/npc` 即可。  
-- **資料外部化**：名字、背景、個性、怪癖、性別、年齡、外觀與種族風味皆由 TXT/JSON 管理。  
-- **年齡系統**：依各種族壽命分布隨機抽齡（青年/壯年/老年/高齡），並附上標籤。  
-- **性別生成**：從 `genders.txt` 抽取，固定顯示在背景最後一行。  
-- **外觀描述**：隨機組合身形、髮色、瞳色、特徵及種族風味（例：精靈耳尖、矮人鬍鬚）。  
-- **裝備/法術**：依 NPC 類型自動加載 JSON 定義。  
-- **輕鬆擴展**：編輯 TXT/JSON 檔即可修改模組行為，無需改程式。
+## ✨ Features
+- **One-click NPC generation**: Simply type `/npc` in the chat box.  
+- **Externalized data**: Names, backgrounds, personalities, quirks, gender, age, appearance, and racial flavor are all managed via TXT/JSON files.  
+- **Age system**: Randomly selects age according to each race's lifespan distribution (youth/adult/elder/ancient) and attaches labels.  
+- **Gender generation**: Drawn from `genders.txt`, always displayed in the last line of the background field.  
+- **Appearance description**: Randomly combines body type, hair color, eye color, features, and racial traits (e.g., elf pointed ears, dwarf beard).  
+- **Equipment/Spells**: Automatically loads from JSON definitions based on NPC type.  
+- **Easily extendable**: Modify TXT/JSON files to change module behavior, no coding required.  
 
 ---
 
-## 📂 專案結構
+## 📂 Project Structure
 ```
 npc-generator/
 ├─ module.json
@@ -60,47 +62,49 @@ npc-generator/
 ```
 ---
 
-## ⚙️ 安裝
-1. 將 `npc-generator` 複製到 FoundryVTT 的模組資料夾：
-2. 重新啟動 Foundry。  
-3. 在 **Manage Modules** 勾選 **NPC Generator**。  
+---
 
-### GitHub Raw 安裝
-複製以下連結到 Foundry 的「安裝模組」→「透過 Manifest 安裝」：
-https://raw.githubusercontent.com/KERORO6262/npc-generator/main/module.json
+## ⚙️ Installation
+1. Copy the `npc-generator` folder into your FoundryVTT `modules` directory.  
+2. Restart Foundry.  
+3. Enable **NPC Generator** in **Manage Modules**.  
+
+### GitHub Raw Installation
+Copy the following link into Foundry’s “Install Module” → “Install via Manifest”:  
+https://raw.githubusercontent.com/KERORO6262/npc-generator/main/module.json  
 
 ---
 
-## ▶️ 使用方式
-在聊天輸入：/npc
-生成的 NPC 會出現在 **Actors**。  
-範例背景欄位：
-背景：曾經是城鎮守衛…
-個性：忠誠但頑固
-怪癖：喜歡收集破銅爛鐵
-長相：結實、黑髮、碧眼、左耳有環
-年齡：42（壯年）
-性別：男
+## ▶️ Usage
+Type `/npc` in the chat box.  
+The generated NPC will appear in **Actors**.  
+Example background field:
+Background: Once served as a town guard…
+Personality: Loyal but stubborn
+Quirk: Collects junk and scrap
+Appearance: Muscular, black hair, blue eyes, earring on left ear
+Age: 42 (Adult)
+Gender: Male
 
 ---
 
-## 🛠️ 如何擴充
-- **名字池**：編輯 `first_names.txt`、`last_names.txt`。  
-- **背景/個性/怪癖**：對應 TXT 每行新增一條。  
-- **外觀描述**：修改 `appearance/` 下檔案。  
-- **性別池**：編輯 `genders.txt`。  
-- **年齡分布**：修改 `config/config.json` 的 `races[*].age.buckets`；修改 `ages/labels.txt` 改顯示文字。  
-- **裝備/法術**：編輯 `npc_gear.json`、`npc_spells.json`。  
+## 🛠️ How to Extend
+- **Name pools**: Edit `first_names.txt` and `last_names.txt`.  
+- **Backgrounds/Personalities/Quirks**: Add one entry per line in the corresponding TXT file.  
+- **Appearance descriptions**: Modify files under `appearance/`.  
+- **Gender pool**: Edit `genders.txt`.  
+- **Age distribution**: Adjust `races[*].age.buckets` in `config/config.json`; edit `ages/labels.txt` for display text.  
+- **Equipment/Spells**: Edit `npc_gear.json` and `npc_spells.json`.  
 
 ---
 
 ## 🔮 Roadmap
-- [ ] 依性別切換取名池  
-- [ ] 依 NPC 類型調整年齡分布  
-- [ ] 年齡修正屬性  
-- [ ] 指令參數 `/npc elf guard 女`
+- [ ] Gender-based naming pools  
+- [ ] Age distribution adjusted by NPC type  
+- [ ] Age affecting attributes  
+- [ ] Command parameters `/npc elf guard female`
 
 ---
 
-## 📜 授權
+## 📜 License
 MIT License
